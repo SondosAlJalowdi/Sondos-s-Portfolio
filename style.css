@@ -1,0 +1,413 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: #800000;
+    background-color: #F2E8C6;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    color: #800000;
+    text-decoration: none;
+}
+
+.navbar{
+    padding: 0 50px;
+    height: 80px;
+    align-items: center;
+    background-color: #DAD4B5 ;
+}
+
+.nav-left a{
+    color:#800000;
+    font-size: 22px;
+    font-weight: 600;
+}
+.nav-right a{
+    color:#800000;
+    margin: 0 10px;
+}
+
+.nav-right a:last-child{
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #F2E8C6;
+    background-color:#800000 ;
+}
+
+.nav-right a span{
+    margin-left: 5px;
+}
+
+.navbar a:hover {
+    color: #af200d;
+}
+
+.home{
+    background-color: #F2E8C6;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px 0;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.home .text{
+    flex: 5;
+}
+
+.home .text h2{
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.home .text .links{
+    margin-top: 25px;
+}
+
+.home .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #800000 ;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.home .text .links a:hover{
+    color: #af200d;
+    border: 2px solid#af200d;
+}
+
+.home .pic{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.home .pic img{
+    filter: drop-shadow(0 0 20px #800000 );
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.skills-section{
+    color: #3f0a0a;
+    padding: 50px 50px;
+    margin-bottom: 100px;
+    background-color: #DAD4B5;
+    background: linear-gradient(to right,#800000, #b74d3f,#DAD4B5 , #F2E8C6);
+}
+
+
+
+.skills-section h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.skills-section .text{
+    font-weight: 500;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1.5px solid #bba084;
+    border-radius: 5px;
+    margin: 10px;
+    gap: 10px;
+}
+.skills-section .cells .cell span{
+    font-size: 18px;
+}
+
+.skills-section .cells .cell img{
+    width: 30px;
+    height: 30px;
+}
+
+.education{
+    display: flex;
+    padding: 0px 50px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 100px;
+    justify-content: center;
+    
+}
+
+.education h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.education ul{
+    list-style: none;
+}
+
+.education p{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.education .group{
+    margin-top: 100px;
+}
+
+.education img{
+    filter: drop-shadow(0 0 20px #800000 );
+    width: 500px;
+    width: 500px;
+    animation: rotate 20s linear infinite;
+}
+
+.contact-section{
+    background: linear-gradient(to left,#800000, #b74d3f,#DAD4B5 , #F2E8C6);
+    padding: 50px 50px;
+    margin-bottom: 30px;
+
+}
+
+.contact-section h2{
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text{
+    margin-top: 20px;
+    flex: 3;
+}
+.contact-section .group form{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.contact-section .group form input, 
+.contact-section .group form textarea{
+    width: 75%;
+     font-family: 'Poppins' sans-serif;
+     border: 2px solid #800000;
+     box-shadow: 5px 5px 2px #800000;
+     padding: 10px;
+     margin-bottom: 15px;
+     background-color: #F2E8C6;
+     resize: none;
+}
+
+.contact-section .group form button{
+    font-size: 20px;
+    font-family: 'Poppins' sans-serif;
+    color:#800000;
+    background-color: #F2E8C6;
+    border: 2px solid  #800000;
+    box-shadow: 5px 5px 2px #800000;
+    height: 50px;
+    width: 75%;
+}
+
+.contact-section .group form button:hover{
+    border: 2px solid  #F2E8C6;
+    background-color: #800000;
+    color: #F2E8C6;
+}
+
+.footer-container{
+    filter: drop-shadow(0 0 20px #800000 );
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(5, 33.3%);
+    justify-items:center;
+    width: 100%;
+    bottom: 0;
+    background-color:#800000;
+    color: #F2E8C6;
+    padding: 35px  20px;
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 120px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.footer-container .logo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.footer-container .my-email{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+.footer-container .my-email a{
+    color: #F2E8C6;
+}
+
+.footer-container .copy-rights{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.footer-container .highlights{
+    line-height: 30px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.footer-container .highlights a{
+    font-weight: 600;
+    color: #F2E8C6;
+    display: flex;
+
+}
+
+.footer-container h2{
+    font-family: "Monsieur La Doulaise", serif;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.footer-container .social-media{
+    
+    font-size: 30px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.footer-container .social-media a{
+    color: #F2E8C6 ;
+}
+
+.footer-container .social-media i{
+    padding: 0 10px;
+}
+
+@keyframes rotate {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1039px) {
+    .skills-section .text{
+        width: 100%;
+    }
+    .home {
+        flex-direction:column-reverse;
+        text-align: center;
+       
+    }
+
+    .home .pic img{
+        width: 60%;
+        height: 60%;
+        margin: auto;
+    }
+
+    .education{
+        margin-top: 5px;
+        flex-direction: column;
+        text-align: center;
+        height: 300px;
+    }
+    .education .group{
+        margin: 10px;
+    }
+
+    .education img{
+        display: none;
+    }
+
+    .contact-section .group{
+        flex-direction: column;
+    }
+
+    .contact-section .group form{
+        align-items: center;
+    }
+   
+}
+
+@media (max-width: 813px) {
+    .navbar{
+        padding: 0 20px;
+    }
+    .nav-right a{
+        font-size: 22px;
+    }
+    .nav-right a:last-child{
+        color: #800000 ;
+        background-color: #DAD4B5;
+        padding: 0;
+    }
+    .nav-right a span{
+        display: none;
+    }
+    .home{
+        padding: 0 20px;
+    }
+    .home .text h2{
+        font-size: 30px;
+    }
+
+
+
+}
+@media (max-width: 1085px) {
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+ }
+
+ @media (max-width: 506px) {
+    .education{
+        height: auto;
+        margin-bottom: 5px;
+    }
+    
+ }
